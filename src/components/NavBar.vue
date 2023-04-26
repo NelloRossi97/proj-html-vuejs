@@ -11,16 +11,20 @@
             </ul>
         </div>
         <div>
-            <button class="btn">ciao</button>
+            <ButtonPrimary :text="'purchase'"/>
             <i class="fa-solid fa-magnifying-glass ms-3"></i>
         </div>
     </nav>
 </template>
 
 <script>
-import {navbar} from '../data/data.js'
+import { navbar } from '../data/data.js';
+import ButtonPrimary from './ButtonPrimary.vue';
     export default {
     name: 'NavBar',
+    components: {
+        ButtonPrimary
+    },
     data() {
         return {
                 navbar
@@ -31,13 +35,6 @@ import {navbar} from '../data/data.js'
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-button{
-    background: $gradient-primary;
-    border-radius: 50px;
-    color: white;
-    text-transform: uppercase;
-    padding: 10px 40px;
-}
 i{
     color: $contrast-color;
 }
