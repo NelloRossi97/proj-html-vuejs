@@ -8,3 +8,7 @@
 @import 'bootstrap/scss/bootstrap.scss';
 
 @import './partials/variables';
+
+body{
+    background-color: $bg-primary;
+}
