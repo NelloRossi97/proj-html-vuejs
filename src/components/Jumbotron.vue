@@ -4,6 +4,7 @@
             <span id="experience" class="text-uppercase title">17 years of experience</span>
             <h2>We are a</h2>
             <h2>Web Design <span>Agency</span></h2>
+            <Divider/>
             <p class="my-5 description">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
             there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
@@ -24,10 +25,12 @@
 
 <script>
 import ButtonPrimary from './ButtonPrimary.vue';
+import Divider from './Divider.vue';
     export default {
     name: 'Jumbotron',
     components: {
-        ButtonPrimary
+        ButtonPrimary,
+        Divider
     }
     }
 </script>
