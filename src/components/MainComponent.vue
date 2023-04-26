@@ -1,12 +1,16 @@
 <template>
     <main>
-        main
+        <Jumbotron/>
     </main>
 </template>
 
 <script>
+import Jumbotron from './Jumbotron.vue';
     export default {
-        name: 'MainComponent'
+    name: 'MainComponent',
+    components: {
+            Jumbotron
+        }
     }
 </script>
 
