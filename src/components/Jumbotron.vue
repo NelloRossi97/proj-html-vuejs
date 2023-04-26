@@ -1,7 +1,7 @@
 <template>
     <section class="overflow-hidden d-flex flex-column justify-content-center ms-5">
         <div class="container">
-            <span class="text-uppercase title">17 years of experience</span>
+            <span id="experience" class="text-uppercase title">17 years of experience</span>
             <h2>We are a</h2>
             <h2>Web Design <span>Agency</span></h2>
             <p class="my-5 description">
@@ -34,9 +34,13 @@ import ButtonPrimary from './ButtonPrimary.vue';
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-
+#experience{
+    opacity: 0;
+}
 section{
     text-align: center;
+    margin-top: 30vh;
+    height: 120vh;
 }
 .title{
     letter-spacing: 0.8rem;
@@ -65,9 +69,17 @@ p{
         background-size: 60vw;
         background-repeat: no-repeat;
         text-align: left;
+        margin-top: 20vh;
     }
     .description{
         max-width: 50%;
+    }
+    #experience{
+        opacity: 100;
+        font-weight: bold;
+        background: $gradient-primary-topdown;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 </style>
