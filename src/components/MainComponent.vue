@@ -4,6 +4,7 @@
         <Services/>
         <LearnAbout/>
         <Showcase/>
+        <Comment/>
     </main>
 </template>
 
@@ -12,13 +13,15 @@ import Jumbotron from './Jumbotron.vue';
 import Services from './Services.vue';
 import LearnAbout from './LearnAbout.vue';
 import Showcase from './Showcase.vue';
+import Comment from './Comment.vue';
     export default {
     name: 'MainComponent',
     components: {
         Jumbotron,
         Services,
         LearnAbout,
-        Showcase
+        Showcase,
+        Comment
         }
     }
 </script>
