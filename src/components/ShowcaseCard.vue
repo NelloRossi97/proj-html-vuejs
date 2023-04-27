@@ -21,7 +21,7 @@
     transition: 1s;
     &:hover{
         scale: 1.15;
-        z-index: 1000;
+        z-index: 900;
     }
     .description{
         top: 0;
