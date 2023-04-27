@@ -34,7 +34,9 @@ import ButtonPrimary from './ButtonPrimary.vue';
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 section{
-    margin: 30vh 5vw;
+    margin: 15vh 0;
+    padding: 15vh 0;
+    background-color: $bg-secondary;
     .left{
         width: 55%;
         overflow: hidden;
