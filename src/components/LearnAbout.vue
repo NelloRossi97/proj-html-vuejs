@@ -34,7 +34,7 @@ import ButtonPrimary from './ButtonPrimary.vue';
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 section{
-    margin: 15vh 0;
+    margin: 30vh 5vw;
     padding: 15vh 0;
     background-color: $bg-secondary;
     .left{
@@ -43,10 +43,10 @@ section{
         #bg-img{
             position: absolute;
             z-index: 2;
-            height: 100%;
+            height: 70%;
             width: 45%;
             left: -100px;
-            top: -70px;
+            top: 40px;
             background-image: url('/images/learn-more-bg.jpg');
             background-size: cover;
             border-radius: 40px;
