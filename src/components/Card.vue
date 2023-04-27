@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 col-sm-6 p-5">
+    <div class="col-12 p-5">
         <i :class="'fa-solid fa-' + icon + ' fs-1'"></i>
         <h3 class="text-capitalize my-4">{{ title }}</h3>
         <p>Far far away, behind the word mountains, far
@@ -21,13 +21,13 @@
 }
 
 .right{
-    width: 60%;
+    max-width: 60%;
 }
 
 .col-12{
     box-shadow: 0 4px 44px 0 rgba(0, 0, 0, 0.14);
     border-radius: 20px;
-    max-width: 400px;
+    max-width: 450px;
     max-height: 400px;
     &:hover{
         color: white;
@@ -35,6 +35,5 @@
         box-shadow: 6px 6px 25px 0 rgba(0,217,166,.35);
         cursor: pointer;
     }
-    
 }
 </style>

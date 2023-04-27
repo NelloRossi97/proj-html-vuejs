@@ -10,7 +10,7 @@
             <ButtonPrimary :text="'view all'"/>
         </div>
         <div class="right align-self-center mt-5">
-            <div class="row gap-5 justify-content-center">
+            <div class="row gap-5 justify-content-center w-100">
                 <Card :icon="'gauge-simple-high'" :title="'speed optimization'"/>
                 <Card :icon="'cloud'" :title="'cloud solutions'"/>
                 <Card :icon="'tablet-screen-button'" :title="'website design'"/>
@@ -42,6 +42,5 @@ h2{
         color: $contrast-color;
     }
 }
-
 
 </style>
