@@ -46,6 +46,26 @@ const showcase = [
         category: 'branding',
         image: '/images/blue-lemon.jpg'
     }
+];
+const news = [
+    {
+        title: 'Marketing ideas',
+        date: 'May 24, 2018',
+        creator: 'Alex',
+        image: '/images/marketing.jpg'
+    },
+    {
+        title: 'rest during working hours',
+        date: 'May 24, 2018',
+        creator: 'Alex',
+        image: '/images/relaxing.jpg'
+    },
+    {
+        title: 'develop your startup idea',
+        date: 'May 24, 2018',
+        creator: 'Alex',
+        image: '/images/room.jpg'
+    }
 ]
 
 export { navbar, quickLinks, contact, showcase };
