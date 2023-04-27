@@ -5,6 +5,7 @@
         <LearnAbout/>
         <Showcase/>
         <Comment/>
+        <NewsBlog/>
     </main>
 </template>
 
@@ -14,6 +15,7 @@ import Services from './Services.vue';
 import LearnAbout from './LearnAbout.vue';
 import Showcase from './Showcase.vue';
 import Comment from './Comment.vue';
+import NewsBlog from './NewsBlog.vue';
     export default {
     name: 'MainComponent',
     components: {
@@ -21,7 +23,8 @@ import Comment from './Comment.vue';
         Services,
         LearnAbout,
         Showcase,
-        Comment
+        Comment,
+        NewsBlog
         }
     }
 </script>

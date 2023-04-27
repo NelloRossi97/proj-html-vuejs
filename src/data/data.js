@@ -68,4 +68,4 @@ const news = [
     }
 ]
 
-export { navbar, quickLinks, contact, showcase };
+export { navbar, quickLinks, contact, showcase, news };
