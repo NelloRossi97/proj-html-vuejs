@@ -18,6 +18,11 @@
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 #card{
+    transition: 1s;
+    &:hover{
+        scale: 1.15;
+        z-index: 1000;
+    }
     .description{
         top: 0;
         width: calc(100% - 1.5rem);
