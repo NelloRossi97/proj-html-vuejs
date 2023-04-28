@@ -27,7 +27,7 @@
 <script>
 import {showcase} from '../data/data'
 import Divider from './Divider.vue';
-import ShowcaseCard from './ShowCaseCard.vue';
+import ShowcaseCard from './ShowcaseCard.vue';
 import ButtonPrimary from './ButtonPrimary.vue';
     export default {
     name: 'Showcase',
