@@ -33,6 +33,7 @@
                 <img src="/images/map.png" alt="map" class="img-fluid">
             </div>
         </div>
+        <EndBar/>
     </footer>
 </template>
 
@@ -40,10 +41,11 @@
 import { links } from '../data/data';
 import { contacts } from '../data/data';
 import Divider from './Divider.vue';
+import EndBar from './EndBar.vue'
     export default {
     name: 'FooterComponent',
     components: {
-            Divider
+            Divider, EndBar
     },
     data() {
         return {
