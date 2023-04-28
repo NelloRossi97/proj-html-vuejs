@@ -9,21 +9,24 @@
 </template>
 
 <script>
-    export default {
+export default {
     name: 'ShowcaseCard',
-        props:['image', 'title', 'category']
-    }
+    props: ['image', 'title', 'category']
+}
 </script>
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-#card{
+
+#card {
     transition: 1s;
-    &:hover{
+
+    &:hover {
         scale: 1.15;
         z-index: 900;
     }
-    .description{
+
+    .description {
         top: 0;
         width: calc(100% - 1.5rem);
         height: 100%;
@@ -31,10 +34,9 @@
         opacity: 0%;
         transition: 1s;
     }
-    &:hover .description{
+
+    &:hover .description {
         opacity: 85%;
         cursor: pointer;
     }
-}
-
-</style>
+}</style>
