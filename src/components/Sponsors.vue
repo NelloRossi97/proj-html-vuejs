@@ -1,8 +1,8 @@
 <template>
     <section class="m-5 py-5">
-        <div class="row justify-content-center align-items-center my-5">
-            <div class="col-12 col-md-4 col-lg-2 mt-5 mt-lg-0 d-flex justify-content-center py-3" v-for="sponsor in sponsors">
-                <img :src="sponsor.image" :alt="sponsor.name" class="img-fluid">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center align-items-center py-3" v-for="sponsor in sponsors">
+                <img :src="sponsor.image" :alt="sponsor.name" class="img-fluid h-50">
             </div>
         </div>
     </section>
@@ -24,6 +24,8 @@ import {sponsors} from '../data/data'
 @use '../assets/styles/partials/variables' as *;
 .row{
     height: 110px;
+    overflow-y: auto;
+    min-height: 300px;
     .col-12{
         height: 100%;
         transition: .5s;
