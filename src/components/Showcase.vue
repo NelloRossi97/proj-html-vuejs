@@ -16,7 +16,7 @@
         </div>
         
         <div class="row w-100 my-5">
-            <ShowCaseCard v-for="item in showcase" :image="item.image" :title="item.title" :category="item.category"/>
+            <ShowcaseCard v-for="item in showcase" :image="item.image" :title="item.title" :category="item.category"/>
         </div>
         <div class="text-center mb-5">
             <ButtonPrimary :text="'read more'"/>
@@ -27,11 +27,11 @@
 <script>
 import {showcase} from '../data/data'
 import Divider from './Divider.vue';
-import ShowCaseCard from './ShowCaseCard.vue';
+import ShowcaseCard from './ShowCaseCard.vue';
 import ButtonPrimary from './ButtonPrimary.vue';
     export default {
     name: 'Showcase',
-    components: { Divider, ShowCaseCard, ButtonPrimary },
+    components: { Divider, ShowcaseCard , ButtonPrimary },
     data() {
         return {
                 showcase
