@@ -2,7 +2,7 @@
   <HeaderComponent/>
   <MainComponent/>
   <FooterComponent/>
-  <div class="back-home d-flex justify-content-center align-items-center" @click="scrollToTop">
+  <div ref="scrollTopButton" class="back-home d-flex justify-content-center align-items-center" @click="scrollToTop" :class="scrolled === false ? 'invisible' : ''">
     <a href="">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
@@ -18,11 +18,27 @@ import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
   export default {
   name: 'App',
+  data() {
+    return {
+      scrolled : false
+    }
+  },
   components: { HeaderComponent, MainComponent, FooterComponent },
-    methods: {
+  methods: {
     scrollToTop() {
       window.scrollTo(0, 0);
-    }
+      },
+    handleScroll() {
+        const scrollBtn = this.$refs.scrollTopButton;
+        if (window.scrollY > 0) {
+          this.scrolled = true;
+        } else {
+          this.scrolled = false;
+        }
+      },
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
   }
   }
 </script>
