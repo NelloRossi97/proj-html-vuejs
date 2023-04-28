@@ -14,3 +14,8 @@ body{
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
 }
+
+.fa-brands:hover{
+    color: $contrast-color;
+    cursor: pointer;
+}

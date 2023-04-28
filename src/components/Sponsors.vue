@@ -2,7 +2,7 @@
     <section class="m-5 py-5">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-4 col-lg-2 d-flex justify-content-center align-items-center py-3" v-for="sponsor in sponsors">
-                <img :src="sponsor.image" :alt="sponsor.name" class="img-fluid h-50">
+                <img :src="sponsor.image" :alt="sponsor.name" class="img-fluid">
             </div>
         </div>
     </section>
