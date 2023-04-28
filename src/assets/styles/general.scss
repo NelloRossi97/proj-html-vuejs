@@ -13,6 +13,7 @@ body{
     background-color: $bg-primary;
     font-family: 'Quicksand', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .fa-brands:hover{

@@ -2,8 +2,8 @@
   <HeaderComponent/>
   <MainComponent/>
   <FooterComponent/>
-  <div class="back-home d-flex justify-content-center align-items-center">
-    <a href="{<MainComponent/>}">
+  <div class="back-home d-flex justify-content-center align-items-center" @click="scrollToTop">
+    <a href="">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
   </div>
@@ -18,7 +18,12 @@ import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
   export default {
   name: 'App',
-    components: {HeaderComponent, MainComponent, FooterComponent}
+  components: { HeaderComponent, MainComponent, FooterComponent },
+    methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    }
+  }
   }
 </script>
 
