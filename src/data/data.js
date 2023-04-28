@@ -66,6 +66,32 @@ const news = [
         creator: 'Alex',
         image: '/images/room.jpg'
     }
+];
+const sponsors = [
+    {
+        name: 'Avant Garde',
+        image: '/images/avant-garde.png'
+    },
+    {
+        name: 'Fast Lane',
+        image: '/images/fastlane.png'
+    },
+    {
+        name: 'Ron Jones',
+        image: '/images/ron-jones.png'
+    },
+    {
+        name: 'Chippy\'s',
+        image: '/images/chippys.png'
+    },
+    {
+        name: 'Bullseye',
+        image: '/images/bullseye.png'
+    },
+    {
+        name: 'Mighty Furnitures',
+        image: '/images/mighty.png'
+    }
 ]
 
-export { navbar, quickLinks, contact, showcase, news };
+export { navbar, quickLinks, contact, showcase, news, sponsors };

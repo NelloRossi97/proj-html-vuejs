@@ -1,7 +1,7 @@
 <template>
     <section class="m-5">
-        <div class="row mx-5 justify-content-between">
-            <div id="email" class="col-12 col-md-6 d-flex flex-column align-items-center p-5 rounded-4 ms-5">
+        <div class="row justify-content-between">
+            <div id="email" class="col-12 col-md-6 d-flex flex-column align-items-center p-5 rounded-4 w-100">
                 <span class="text-capitalize mb-2">are you ready</span>
                 <h2 class="mb-5 fw-bold fs-1">Start a New Project</h2>
                 <div class="position-relative">
@@ -10,7 +10,7 @@
                 </div>
                 
             </div>
-            <div id="start" class="col-12 col-md-6 d-flex flex-column align-items-center p-5 rounded-4 me-5">
+            <div id="start" class="col-12 col-md-6 d-flex flex-column align-items-center p-5 rounded-4 w-100 mt-5 mt-md-0">
                 <span class="text-capitalize">what are you waiting for</span>
                 <h2 class="mb-5 fw-bold fs-1">Start a New Project</h2>
                 <ButtonSecondary :text="'start now'"/>
@@ -34,7 +34,6 @@ import ButtonSecondary from './ButtonSecondary.vue';
 
 #email{
     background: $gradient-secondary;
-    width: 45%;
     color: $bg-primary;
     height: 35vh;
     div{
@@ -62,8 +61,17 @@ import ButtonSecondary from './ButtonSecondary.vue';
 }
 #start{
     background: $hover-bg-reverse;
-    width: 45%;
     color: $bg-primary;
     height: 35vh;
 }
+
+@media screen and (min-width: 768px){
+    #email{
+        width: 48% !important;
+    }
+    #start{
+        width: 48% !important;
+    }
+}
+
 </style>
